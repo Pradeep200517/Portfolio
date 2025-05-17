@@ -70,32 +70,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Category Filtering for Skills
-    const skillFilterBtns = document.querySelectorAll('.skills-filter .filter-btn');
+    // Skills Filter
+    const skillsFilterBtns = document.querySelectorAll('.skills-filter .filter-btn');
     const skillCards = document.querySelectorAll('.skill-card');
 
-    skillFilterBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+    skillsFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
             // Remove active class from all buttons
-            skillFilterBtns.forEach(btn => btn.classList.remove('active'));
+            skillsFilterBtns.forEach(btn => btn.classList.remove('active'));
             // Add active class to clicked button
-            this.classList.add('active');
-
-            const filter = this.getAttribute('data-filter');
-
+            btn.classList.add('active');
+            
+            const filterValue = btn.getAttribute('data-filter');
+            
             skillCards.forEach(card => {
-                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                if (filterValue === 'all') {
                     card.style.display = 'block';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0) scale(1)';
-                    }, 100);
                 } else {
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(20px) scale(0.95)';
-                    setTimeout(() => {
+                    if (card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'block';
+                    } else {
                         card.style.display = 'none';
-                    }, 300);
+                    }
                 }
             });
         });
@@ -307,20 +303,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize contact form
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Here you would typically send the data to a server
-            console.log('Form submitted:', data);
-            
-            // Show success message
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData);
+        
+        // Here you would typically send the data to a server
+        console.log('Form submitted:', data);
+        
+        // Show success message
+        alert('Thank you for your message! I will get back to you soon.');
+        this.reset();
+    });
     }
 
     // Make sure all sections are visible initially
