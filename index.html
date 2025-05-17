@@ -49,35 +49,59 @@
     <!-- Hero Section -->
     <section id="home" class="section hero-section">
         <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Gundu Pradeep</h1>
-                <div class="hero-subtitle">
-                    <span class="text-wrapper">
-                        <span class="letters">Computer Science Engineer</span>
-                    </span>
+            <div class="hero-left">
+                <div class="hero-text">
+                    <h1 class="hero-title">Gundu Pradeep</h1>
+                    <div class="hero-subtitle">
+                        <span class="text-wrapper">
+                            <span class="letters">Computer Science Engineer</span>
+                        </span>
+                    </div>
+                    <p class="hero-description">Aspiring Computer Science Engineer with expertise in Java, Python, and web development. Passionate about creating innovative solutions and contributing to real-time projects.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    </div>
                 </div>
-                <p class="hero-description">Aspiring Computer Science Engineer with expertise in Java, Python, and web development. Passionate about creating innovative solutions and contributing to real-time projects.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years Coding</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">2+</span>
-                    <span class="stat-label">Years Coding</span>
+            <div class="hero-right">
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="pradeep photo.jpg" alt="Gundu Pradeep" class="profile-img">
+                        <div class="image-border-anim"></div>
+                        <div class="image-glow"></div>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">4+</span>
-                    <span class="stat-label">Projects</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Certifications</span>
+                <div class="hero-badges">
+                    <div class="hero-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>B.E. CSE Student</span>
+                    </div>
+                    <div class="hero-badge">
+                        <i class="fas fa-code"></i>
+                        <span>Frontend Developer</span>
+                    </div>
+                    <div class="hero-badge">
+                        <i class="fas fa-trophy"></i>
+                        <span>Hackathon Winner</span>
+                    </div>
                 </div>
             </div>
         </div>
-
         <canvas id="hero-canvas" class="hero-canvas"></canvas>
     </section>
 
@@ -88,26 +112,6 @@
             <div class="section-divider"></div>
         </div>
         <div class="about-container">
-            <div class="about-image">
-                <div class="image-wrapper">
-                    <img src="pradeep photo.jpg" alt="Gundu Pradeep" class="profile-img">
-                    <div class="image-border-anim"></div>
-                </div>
-                <div class="about-badges">
-                    <div class="badge">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>B.E. CSE Student</span>
-                    </div>
-                    <div class="badge">
-                        <i class="fas fa-code"></i>
-                        <span>Frontend Developer</span>
-                    </div>
-                    <div class="badge">
-                        <i class="fas fa-trophy"></i>
-                        <span>Hackathon Winner</span>
-                    </div>
-                </div>
-            </div>
             <div class="about-content">
                 <h3 class="about-title">Computer Science Engineer & Problem Solver</h3>
                 <p class="about-text">Currently pursuing B.E. in Computer Science Engineering at Vasavi College of Engineering, Hyderabad. With a strong foundation in programming and web development, I focus on creating innovative solutions that drive progress and enhance efficiency.</p>
@@ -168,13 +172,14 @@
 
     <!-- Skills Section -->
     <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <p class="section-description">
-                I am a versatile developer with expertise in multiple programming languages and technologies. My skills include:
-            </p>
+        <div class="section-header">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="skills-container">
             <div class="skills-filter">
-                <button class="filter-btn active" data-filter="web">Web Technologies</button>
+                <button class="filter-btn active" data-filter="all">All Skills</button>
+                <button class="filter-btn" data-filter="web">Web Technologies</button>
                 <button class="filter-btn" data-filter="programming">Programming Languages</button>
                 <button class="filter-btn" data-filter="ai">AI/ML</button>
                 <button class="filter-btn" data-filter="soft">Soft Skills</button>
@@ -365,14 +370,14 @@
                 <div class="project-card" data-category="ai" data-tilt>
                     <div class="project-image">
                         <img src="https://tse1.mm.bing.net/th?id=OIP.-0Lw-wtX1g2vXmacVlPNPgHaFU&pid=Api&P=0&h=220" alt="AutoSage">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <h3 class="project-title">AUTO SAGE APP</h3>
-                                <p class="project-category">AI-Powered Vehicle Expert</p>
-                                <p class="tech-stack">Python, Gemini API, Flask</p>
-                                <a href="https://github.com/Pradeep200517/AutoSage-App-Using-Gemini-Flash" target="_blank" class="btn btn-view">View Project</a>
-                                <a href="https://pradeep200517.github.io/AutoSage-App-Using-Gemini-Flash/" target="_blank" class="btn btn-show">Show Project</a>
-                            </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AUTO SAGE APP</h3>
+                        <p class="project-category">AI-Powered Vehicle Expert</p>
+                        <p class="tech-stack">Python, Gemini API, Flask</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Pradeep200517/AutoSage-App-Using-Gemini-Flash" target="_blank" class="btn btn-view">View Project</a>
+                            <a href="https://pradeep200517.github.io/AutoSage-App-Using-Gemini-Flash/" target="_blank" class="btn btn-show">Show Project</a>
                         </div>
                     </div>
                 </div>
@@ -381,13 +386,13 @@
                 <div class="project-card" data-category="java" data-tilt>
                     <div class="project-image">
                         <img src="https://tse3.mm.bing.net/th?id=OIP.3e5_0HgchxmJ25hwSXaF-gHaH0&pid=Api&P=0&h=220" alt="Social Media">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <h3 class="project-title">SOCIAL MEDIA APP</h3>
-                                <p class="project-category">Java OOP Implementation</p>
-                                <p class="tech-stack">Java, OOP, Files</p>
-                                <a href="https://github.com/Pradeep200517/SOCIAL-MEDIA-APPLICATION-APP-" target="_blank" class="btn btn-view">View Project</a>
-                            </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">SOCIAL MEDIA APP</h3>
+                        <p class="project-category">Java OOP Implementation</p>
+                        <p class="tech-stack">Java, OOP, Files</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Pradeep200517/SOCIAL-MEDIA-APPLICATION-APP-" target="_blank" class="btn btn-view">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -396,14 +401,14 @@
                 <div class="project-card" data-category="web" data-tilt>
                     <div class="project-image">
                         <img src="https://tse4.mm.bing.net/th?id=OIP.L7WE_HSEAuOL2-Jx7LwvdQHaEJ&pid=Api&P=0&h=220" alt="Smart Home">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <h3 class="project-title">SMART HOME INTERFACE</h3>
-                                <p class="project-category">Device Control System</p>
-                                <p class="tech-stack">HTML, CSS, JavaScript</p>
-                                <a href="https://github.com/Pradeep200517/Smart-Home" target="_blank" class="btn btn-view">View Project</a>
-                                <a href="https://moonlit-moonbeam-32147f.netlify.app/" target="_blank" class="btn btn-show">Show Project</a>
-                            </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">SMART HOME INTERFACE</h3>
+                        <p class="project-category">Device Control System</p>
+                        <p class="tech-stack">HTML, CSS, JavaScript</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Pradeep200517/Smart-Home" target="_blank" class="btn btn-view">View Project</a>
+                            <a href="https://moonlit-moonbeam-32147f.netlify.app/" target="_blank" class="btn btn-show">Show Project</a>
                         </div>
                     </div>
                 </div>
@@ -412,19 +417,18 @@
                 <div class="project-card" data-category="java" data-tilt>
                     <div class="project-image">
                         <img src="https://tse1.mm.bing.net/th?id=OIP.3b5aOUD4_7aKEiI3zZTt4gHaE8&pid=Api&P=0&h=220" alt="Recommendation System">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <h3 class="project-title">ADVANCED RECOMMENDATION SYSTEM</h3>
-                                <p class="project-category">Personalized Suggestions</p>
-                                <p class="tech-stack">Java, File Handling</p>
-                                <a href="https://github.com/Pradeep200517/SOCIAL-MEDIA-APPLICATION-APP-" target="_blank" class="btn btn-view">View Project</a>
-                            </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">ADVANCED RECOMMENDATION SYSTEM</h3>
+                        <p class="project-category">Personalized Suggestions</p>
+                        <p class="tech-stack">Java, File Handling</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Pradeep200517/SOCIAL-MEDIA-APPLICATION-APP-" target="_blank" class="btn btn-view">View Project</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Contact Section -->
